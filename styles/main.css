@@ -1,0 +1,123 @@
+.homeBg {
+  background-image: url(../imgs/HomeBG-min.5323a759d1ce8b140e72.png);
+}
+
+.universeBg {
+  background-image: url(../imgs/UniverseBG-min.bc6d8645c7cbdc3640b3.png);
+}
+
+.explorerBg {
+  background-image: url(../imgs/ExplorationBG-min.96357e9ab21bca487c90.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --fonteDafault-Color: #e1e1e6;
+  --fonteNavDafault-Color: #c4c4cc;
+  --fonteNavActive-Color: #fff;
+  --fonteActive-Color: #02799d;
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 4.2rem;
+  align-items: center;
+  position: absolute;
+}
+nav a {
+  color: var(--fonteNavDafault-Color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 2.2rem;
+}
+nav a:hover {
+  color: var(--fonteNavActive-Color);
+}
+.a-active {
+  color: var(--fonteNavActive-Color);
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--fonteDafault-Color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 4rem 7.2rem;
+}
+
+#homeTitle,
+#universeTitle,
+#explorationTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+}
+
+#buttonQueroSaberMais {
+  background-color: transparent;
+  outline: none;
+  border: 0.2rem solid #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.2rem;
+  cursor: pointer;
+  text-align: center;
+  color: var(--fonteNavActive-Color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  transition: scale 0.5s;
+}
+#buttonQueroSaberMais:hover {
+  transform: scale(1.03);
+}
+#buttonQueroSaberMais:active {
+  background-color: #fff;
+  color: var(--fonteActive-Color);
+}
+#app {
+  height: 100%;
+}
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.universeContainer,
+.explorationContainer {
+  flex-direction: column;
+  height: 100%;
+  gap: 2.4rem;
+  display: flex;
+  padding: 17rem 0 0 0;
+  flex-direction: column;
+}
+.universeInfs,
+.explorationInfs {
+  width: 64.8rem;
+  height: 20.3rem;
+}
+.universeInfs p,
+.explorationInfs p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 1.8rem);
+  line-height: 160%;
+  color: var(--fonteDafault-Color);
+}
+
